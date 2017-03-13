@@ -1,0 +1,18 @@
+* {
+	padding: 10px;
+}
+
+.card {
+	border: 1px solid black;
+	background: cyan;
+}
+
+.list {
+	background: yellow;
+	border: 3px solid black;
+}
+
+.board {
+	background: magenta;
+	border: 5px solid black;
+}
