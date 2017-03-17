@@ -11,6 +11,8 @@ export default function Board(props) {
             <List title={listTitles[i]}
                   cards={cards}/> );
     }
+    console.log(lists);
+
     return ( 
         <div className="board">
             <span>{props.title}</span>
