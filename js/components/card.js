@@ -1,8 +1,14 @@
 import React from 'react';
 
-export default function Card(props) {
+class Card extends React.Component {
 
-    return (
-        <div className="card">{props.text}</div>
-    );
+	constructor(props) {
+        super(props);
+    }
+
+    render(){
+	    return (
+	        <div className="card">{props.text}</div>
+	    );
+	}
 }

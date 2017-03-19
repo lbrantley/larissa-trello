@@ -1,7 +1,7 @@
 import React from 'react';
 import List from './list';
 
-export default class Board extends React.Component {
+class Board extends React.Component {
 
     constructor(props) {
         super(props);
