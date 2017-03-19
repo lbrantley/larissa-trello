@@ -10,7 +10,7 @@ function Form(props){
 
 
 
-class List extends React.Component {
+export default class List extends React.Component {
 
 	constructor(props) {
         super(props);
