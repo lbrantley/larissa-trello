@@ -28,11 +28,11 @@ export default class List extends React.Component {
     render(){
     	return (
 	      <div>
-	        <div className="list">{props.title}</div>
-	          <div className="list">{props.cards.map(function(cardText){
+	        <div className="list">{this.props.title}</div>
+	          <div className="list">{this.props.cards.map(function(cardText){
 	              return <Card text={cardText} />})
 	          }
-	        </div>    //this.onAddInputChange refers to line 23 function
+	        </div>
 	        <Form onAddInputChange={this.onAddInputChange} onAddSubmit={(event) => { event.preventDefault(); this.onAddSubmit;}} />
 	      </div>
   	    );	

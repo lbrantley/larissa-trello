@@ -8,7 +8,7 @@ export default class Card extends React.Component {
 
     render(){
 	    return (
-	        <div className="card">{props.text}</div>
+	        <div className="card">{this.props.text}</div>
 	    );
 	}
 }
