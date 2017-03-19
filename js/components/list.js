@@ -10,18 +10,18 @@ function Form(props){
 
 
 
-class List extends React.Component{
+class List extends React.Component {
 
 	constructor(props) {
         super(props);
         this.onAddInputChange = this.onAddInputChange.bind(this);
     }
     
-	function onAddInputChange(){
+	onAddInputChange(){
 		console.log("onAddInputChange is working");
 	}
 
-	function onAddSubmit(){
+	onAddSubmit(){
 		console.log("onAddSubmit is working");
 	}
 
@@ -33,7 +33,7 @@ class List extends React.Component{
 	              return <Card text={cardText} />})
 	          }
 	        </div>    //this.onAddInputChange refers to line 23 function
-	        <Form onAddInputChange={this.onAddInputChange} onAddSubmit={event.preventDefault(); this.onAddSubmit} />
+	        <Form onAddInputChange={this.onAddInputChange} onAddSubmit={(event) => { event.preventDefault(); this.onAddSubmit;}} />
 	      </div>
   	    );	
     }
